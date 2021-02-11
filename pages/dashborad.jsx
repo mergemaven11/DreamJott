@@ -1,6 +1,6 @@
 // pages/dashboard.jsx
 import React from 'react';
-import { getSession } from 'next-auth/client'
+import { getSession } from 'next-auth/client';
 
 export default function Dashboard({ user }) {
   return (
