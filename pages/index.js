@@ -12,14 +12,34 @@ export default function Home() {
   if (loading) {
     return <p>Loading...</p>;
   }
+  const title = (
+    <h1
+      style={{
+        fontFamily: 'Concert One, cursive',
+        color: '#28A7E5',
+        fontSize: '2em',
+      }}
+    >
+      {' '}
+      Get started!
+    </h1>
+  );
 
   return (
     <>
       <Navbar />
-      <div className={styles.container}>
+      <div
+        style={{
+          backgroundImage: 'url(/dj-bg.png)',
+          height: '100%',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
+        className={styles.container}
+      >
+        {title}
         {!session && (
           <>
-            <h1> Please Signup or Login in </h1>
             <br />
             <Button color="primary" onClick={signIn}>
               Sign in
