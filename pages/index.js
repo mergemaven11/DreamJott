@@ -3,8 +3,10 @@ import React from 'react';
 import { signIn, signOut, useSession } from 'next-auth/client';
 // Component Imports
 import Button from '@material-ui/core/Button';
-import Navbar from '../components/navbar';
+// import Navbar from '../components/Common';
+Navbar
 import styles from '../styles/Home.module.css';
+import Navbar from '../components/Common/Navbar';
 
 export default function Home() {
   const [session, loading] = useSession();

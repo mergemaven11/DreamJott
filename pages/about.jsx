@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
-import Navbar from '../components/navbar';
+import Navbar from '../components/Common/Navbar/navbar-styles';
 
 export default function About() {
   return (

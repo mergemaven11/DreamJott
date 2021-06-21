@@ -2,9 +2,15 @@
 import React from 'react';
 import { getSession } from 'next-auth/client';
 
+// const styles = {
+//   wrapper: {
+//     backgroundColor: '#ffffff',
+//   },
+// };
+
 export default function Dashboard({ user }) {
   return (
-    <div>
+    <div style={styles.wrapper}>
       <h1>Dashboard</h1>
       <p>
         Welcome,
@@ -27,3 +33,5 @@ export async function getServerSideProps(ctx) {
     },
   };
 }
+
+
